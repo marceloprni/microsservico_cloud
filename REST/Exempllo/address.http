@@ -1,0 +1,16 @@
+# ENVIAR DADOS DE ADDRESS
+POST http://localhost:3000/address
+content-type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidHlwZVVzZXIiOjEsImlhdCI6MTczODMzMDA3MywiZXhwIjoxNzM4OTM0ODczfQ.1e375vEKeRQuZQ-c9pBY3MX4Yicd-60SutfdF-pozIk
+
+{
+    "complement": "complemento2",
+    "number": 3213,
+    "cep": "09371654",
+    "cityId" : 128
+}
+
+
+GET http://localhost:3000/addres
+content-type: application/json
+Authorization:

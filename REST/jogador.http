@@ -1,0 +1,9 @@
+POST http://localhost:8085/api/v1/jogadores
+content-type: application/json
+Authorization: 
+
+{
+    "telefoneCelular": "11999999999",
+    "email": "marcelo@gmail.com",
+    "nome": "Marcelo"
+}
