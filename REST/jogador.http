@@ -1,9 +1,39 @@
-POST http://localhost:8085/api/v1/jogadores
+### CRIAR DADOS DE JOGADORES
+POST http://localhost:3085/api/v1/jogadores
 content-type: application/json
 Authorization: 
 
 {
-    "telefoneCelular": "11999999999",
-    "email": "marcelo@gmail.com",
-    "nome": "Marcelo"
+    "telefoneCelular": "11999999844" ,
+    "email": "lari@terra.com",
+    "nome": "lari Silva"
 }
+
+
+### ATUALIZAR DADOS DE JOGADORES.
+PUT http://localhost:3085/api/v1/jogadores/694a9593a5a53e5a9bb3e685
+content-type: application/json
+Authorization: 
+
+{
+    "telefoneCelular": "11999999777",
+    "nome": "marceloprn1"
+}
+
+
+### CHAMA JOGADORES
+GET http://localhost:3085/api/v1/jogadores
+content-type: application/json
+Authorization: 
+
+
+### CHAMA JOGADORES POR EMAIL
+GET http://localhost:3085/api/v1/jogadores/694ac98074aec61bdba9668b
+content-type: application/json
+Authorization: 
+
+
+### DELETAR JOGADOR 
+DELETE  http://localhost:3085/api/v1/jogadores/694ac9aa7d22259c15067ef2
+content-type: application/json
+Authorization: 
