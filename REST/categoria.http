@@ -1,0 +1,72 @@
+### CRIAR CATEGORIA
+POST http://localhost:3085/api/v1/categorias
+content-type: application/json
+Authorization: 
+
+{
+    "categoria": "A" ,
+    "descricao": "Categoria A",
+    "eventos": [
+        {
+            "nome": "VITORIA",
+            "operacao": "+",
+            "valor": 50
+        },
+        {
+            "nome": "VITORIA_LIDER",
+            "operacao": "+",
+            "valor": 60
+        },
+        {
+            "nome": "DERROTA",
+            "operacao": "+",
+            "valor": 0
+        }
+    ]
+}
+
+### CONSULTAR TODAS AS CATEGORIAS
+GET http://localhost:3085/api/v1/categorias
+content-type: application/json
+Authorization: 
+
+
+### CONSULTAR POR CATEGORIA 
+GET http://localhost:3085/api/v1/categorias/A
+content-type: application/json
+Authorization: 
+
+
+### ATRIBUIR JOGADOR NA CATEGORIA A  A - CATEGORIA/JOGADORES/ AHUSDAUHSDHU - id
+POST http://localhost:3085/api/v1/categorias/A/jogadores/6957bbd1d00b9cdc7476d8
+content-type: application/json
+Authorization: 
+
+{}
+
+
+### ATUALIZAR CATEGORIA
+PUT http://localhost:3085/api/v1/categorias/A
+content-type: application/json
+Authorization: 
+
+{
+    "descricao": "Categoria A",
+    "eventos": [
+        {
+            "nome": "VITORIA",
+            "operacao": "+",
+            "valor": 60
+        },
+        {
+            "nome": "VITORIA_LIDER",
+            "operacao": "+",
+            "valor": 80
+        },
+        {
+            "nome": "DERROTA",
+            "operacao": "+",
+            "valor": 0
+        }
+    ]
+}
