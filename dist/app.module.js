@@ -10,6 +10,8 @@ exports.AppModule = void 0;
 const common_1 = require("@nestjs/common");
 const jogadores_module_1 = require("./jogadores/jogadores.module");
 const mongoose_1 = require("@nestjs/mongoose");
+const categorias_module_1 = require("./categorias/categorias.module");
+const desafios_module_1 = require("./desafios/desafios.module");
 const dotenv = require("dotenv");
 dotenv.config();
 let AppModule = class AppModule {
@@ -19,7 +21,9 @@ exports.AppModule = AppModule = __decorate([
     (0, common_1.Module)({
         imports: [
             mongoose_1.MongooseModule.forRoot(`${process.env.Link_conexion}`),
-            jogadores_module_1.JogadoresModule
+            jogadores_module_1.JogadoresModule,
+            categorias_module_1.CategoriasModule,
+            desafios_module_1.DesafiosModule
         ],
         controllers: [],
         providers: [],

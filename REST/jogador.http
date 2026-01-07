@@ -11,13 +11,13 @@ Authorization:
 
 
 ### ATUALIZAR DADOS DE JOGADORES.
-PUT http://localhost:3085/api/v1/jogadores/694a9593a5a53e5a9bb3e685
+PUT http://localhost:3085/api/v1/jogadores/6957bbd1d00b9cdc7476d8cb
 content-type: application/json
 Authorization: 
 
 {
     "telefoneCelular": "11999999777",
-    "nome": "marceloprn1"
+    "nome": "lari Silva"
 }
 
 
@@ -28,7 +28,7 @@ Authorization:
 
 
 ### CHAMA JOGADORES POR EMAIL
-GET http://localhost:3085/api/v1/jogadores/694ac98074aec61bdba9668b
+GET http://localhost:3085/api/v1/jogadores/6957bbd1d00b9cdc7476d8cb
 content-type: application/json
 Authorization: 
 

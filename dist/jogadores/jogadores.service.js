@@ -45,8 +45,6 @@ let JogadoresService = JogadoresService_1 = class JogadoresService {
             throw new common_1.NotFoundException(`Jogador com email ${email} já cadastrado`);
         }
         const jogador = new this.jogadorModel(criarJogadorDto);
-        console.log('Jogador criado com sucesso');
-        console.log(jogador);
         return await jogador.save();
     }
     async consultarTodosJogadores() {
