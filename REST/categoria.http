@@ -4,8 +4,8 @@ content-type: application/json
 Authorization: 
 
 {
-    "categoria": "A" ,
-    "descricao": "Categoria A",
+    "categoria": "F" ,
+    "descricao": "Categoria F",
     "eventos": [
         {
             "nome": "VITORIA",
@@ -31,10 +31,17 @@ content-type: application/json
 Authorization: 
 
 
-### CONSULTAR POR CATEGORIA 
-GET http://localhost:3085/api/v1/categorias/A
+### CONSULTAR POR CATEGORIA utiliza na API NORMAL
+GET http://localhost:3085/api/v1/categorias/F
 content-type: application/json
 Authorization: 
+
+
+### CONSULTAR POR CATEGORIA QUERY RABBITMQ
+GET http://localhost:3085/api/v1/categorias?idCategoria=F
+content-type: application/json
+Authorization: 
+
 
 
 ### ATRIBUIR JOGADOR NA CATEGORIA A  A - CATEGORIA/JOGADORES/ AHUSDAUHSDHU - id
@@ -52,6 +59,32 @@ Authorization:
 
 {
     "descricao": "Categoria A",
+    "eventos": [
+        {
+            "nome": "VITORIA",
+            "operacao": "+",
+            "valor": 60
+        },
+        {
+            "nome": "VITORIA_LIDER",
+            "operacao": "+",
+            "valor": 80
+        },
+        {
+            "nome": "DERROTA",
+            "operacao": "+",
+            "valor": 0
+        }
+    ]
+}
+
+### ATUALIZAR CATEGORIA POR QUERY RABBITMQ '_id'
+PUT http://localhost:3085/api/v1/categorias/69e75f4d912151ae9484cc8e
+content-type: application/json
+Authorization: 
+
+{
+    "descricao": "Categoria 123",
     "eventos": [
         {
             "nome": "VITORIA",

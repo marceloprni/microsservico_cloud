@@ -28,7 +28,7 @@ Authorization:
 
 
 ### CHAMA JOGADORES POR EMAIL
-GET http://localhost:3085/api/v1/jogadores/6957bbd1d00b9cdc7476d8cb
+GET http://localhost:3085/api/v1/jogadores/69b1cf83cf5ad65ca5051b41
 content-type: application/json
 Authorization: 
 

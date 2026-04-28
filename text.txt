@@ -1,3 +1,0 @@
-npm i class-validator class-transformer
-
-https://www.udemy.com/course/construindo-um-backend-escalavel-com-nestjs-aws-e-pivotalws/learn/lecture/20034944#overview
