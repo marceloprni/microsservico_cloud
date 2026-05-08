@@ -20,6 +20,10 @@ Authorization:
     "nome": "anderson silva"
 }
 
+
+
+
+
 ### ATUALIZAR DADOS DE JOGADORES.
 PUT http://localhost:3085/api/v1/jogadores/6957bbd1d00b9cdc7476d8cb
 content-type: application/json
@@ -36,8 +40,12 @@ GET http://localhost:3085/api/v1/jogadores
 content-type: application/json
 Authorization: 
 
+### CONSULTAR POR CATEGORIA QUERY RABBITMQ 'id do jogador'
+GET http://localhost:3085/api/v1/jogadores?idJogador=69f559bc816c79cfb8ec7202
+content-type: application/json
+Authorization: 
 
-### CHAMA JOGADORES POR EMAIL
+### CHAMA JOGADORES POR ID
 GET http://localhost:3085/api/v1/jogadores/69b1cf83cf5ad65ca5051b41
 content-type: application/json
 Authorization: 

@@ -1,0 +1,56 @@
+### CRIAR DESAFIOS
+POST http://localhost:3085/api/v1/desafios
+content-type: application/json
+Authorization: 
+
+{
+    "dataHoraDesafio": "2020-06-10 11:35:00",
+    "solicitante": "id do jogador",
+    "jogadores": [
+        {
+            "_id": "id do jogador"
+        },
+        {
+            "_id": "id jogador"
+        }
+    ]
+}
+
+### CONSULTAR TODOS OS DESAFIOS
+GET http://localhost:3085/api/v1/desafios
+content-type: application/json
+Authorization: 
+
+
+### CONSULTAR DESAFIO DE UM JOGADOR
+GET http://localhost:3085/api/v1/desafios?idJogador="id do jogador"
+content-type: application/json
+Authorization: 
+
+### ATUALIZAR O STATUS DO DESAFIO
+PUT http://localhost:3085/api/v1/desafios/"id do jogador"
+content-type: application/json
+Authorization: 
+
+{
+    "dataHoraDesafio": "2020-06-10 11:35:00",
+    "status": "ACEITO"
+}
+
+
+### CRIAR DESAFIOS
+POST http://localhost:3085/api/v1/desafios/"id do desafio criado"/partida
+content-type: application/json
+Authorization: 
+
+{
+    "def": "id do jogador quem ganhou",
+    "resultado": [
+        {
+            "set": "6-1"
+        },
+        {
+            "set": "6-4"
+        }
+    ]
+}
