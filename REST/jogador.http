@@ -4,11 +4,21 @@ content-type: application/json
 Authorization: 
 
 {
-    "telefoneCelular": "11999999844" ,
-    "email": "lari@terra.com",
-    "nome": "lari Silva"
+    "telefoneCelular": "11987541526" ,
+    "email": "anderson@terra.com",
+    "nome": "anderson silva"
 }
 
+### CRIAR DADOS DE JOGADORES RBMQTT
+POST http://localhost:3085/api/v1/jogadores
+content-type: application/json
+Authorization: 
+
+{
+    "telefoneCelular": "11987541526" ,
+    "email": "anderson@terra.com",
+    "nome": "anderson silva"
+}
 
 ### ATUALIZAR DADOS DE JOGADORES.
 PUT http://localhost:3085/api/v1/jogadores/6957bbd1d00b9cdc7476d8cb
@@ -17,7 +27,7 @@ Authorization:
 
 {
     "telefoneCelular": "11999999777",
-    "nome": "lari Silva"
+    "nome": "anderson silva"
 }
 
 
