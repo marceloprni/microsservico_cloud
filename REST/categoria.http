@@ -4,8 +4,8 @@ content-type: application/json
 Authorization: 
 
 {
-    "categoria": "F" ,
-    "descricao": "Categoria F",
+    "categoria": "G" ,
+    "descricao": "Categoria G",
     "eventos": [
         {
             "nome": "VITORIA",

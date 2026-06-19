@@ -21,17 +21,14 @@ Authorization:
 }
 
 
-
-
-
 ### ATUALIZAR DADOS DE JOGADORES.
-PUT http://localhost:3085/api/v1/jogadores/6957bbd1d00b9cdc7476d8cb
+PUT http://localhost:3085/api/v1/jogadores/69b1cf83cf5ad65ca5051b41
 content-type: application/json
 Authorization: 
 
 {
-    "telefoneCelular": "11999999777",
-    "nome": "anderson silva"
+    "telefoneCelular": "11999999855",
+    "nome": "lari Silva"
 }
 
 
@@ -52,6 +49,17 @@ Authorization:
 
 
 ### DELETAR JOGADOR 
-DELETE  http://localhost:3085/api/v1/jogadores/694ac9aa7d22259c15067ef2
+DELETE  http://localhost:3085/api/v1/jogadores/6a08e8c0165a24d51cce3786
 content-type: application/json
 Authorization: 
+
+### UPLOAD DE ARQUIVO
+POST http://localhost:3085/api/v1/jogadores
+content-type: application/json
+Authorization: 
+
+{
+    "telefoneCelular": "11987541526" ,
+    "email": "anderson@terra.com",
+    "nome": "anderson silva"
+}
